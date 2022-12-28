@@ -1,0 +1,279 @@
+:root {
+  --blanco: #ffffff;
+  --negro: #000000;
+  --fuente: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  --azul: #19315f;
+  --azulOscuro: #141b47;
+  --gris: rgb(128, 128, 128);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: var(--fuente);
+  font-size: 1.6rem;
+  line-height: 2;
+}
+/* Globales */
+.contenedor {
+  width: min(90%, 120rem);
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+input {
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 4.2rem;
+  color: var(--azulOscuro);
+}
+h2 {
+  font-size: 3.4rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 1.8rem;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: var(--negro);
+}
+/* Utilidades */
+.centrar {
+  text-align: center;
+}
+.mt3 {
+  margin-top: 3rem;
+}
+/* Boton */
+.boton {
+  display: block;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  color: var(--blanco);
+  background-color: var(--negro);
+  font-weight: bold;
+  border: none;
+  width: 95%;
+}
+.centrado {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .boton {
+    width: 20rem;
+  }
+}
+/* Header */
+.barra {
+  position: sticky;
+  top: 0;
+  background-color: var(--blanco);
+}
+.header__titulo {
+  padding: 1.2rem;
+  align-items: center;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .header__titulo {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* Entidades */
+.entidades {
+  display: block;
+  gap: 3rem;
+  align-items: center;
+}
+.entidades p {
+  color: var(--gris);
+}
+.entidades p:hover {
+  border-bottom: 1px solid #3a5ba0;
+  color: #3a5ba0;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .entidades {
+    display: flex;
+  }
+}
+
+.buscador input {
+  padding: 0.65rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--gris);
+}
+
+.header__img,
+.consejos__img {
+  width: 6.5rem;
+  height: 6.5rem;
+  display: block;
+}
+/* Navegacion */
+.nav {
+  background-color: #2b4865;
+}
+.nav a {
+  display: block;
+  font-weight: bold;
+  padding: 1rem;
+  color: var(--blanco);
+  text-align: center;
+}
+.nav a:hover {
+  color: var(--negro);
+  background-color: var(--blanco);
+}
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+/* Portada */
+.portada {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./portada.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 55rem;
+  justify-content: center;
+  align-items: center;
+}
+.portada p {
+  color: var(--blanco);
+  font-size: 3.4rem;
+  font-weight: bold;
+}
+
+/* Soluciones */
+.soluciones,
+.consultas {
+  display: grid;
+  text-align: center;
+  margin: 3rem 0;
+  gap: 2.5rem;
+}
+@media (min-width: 768px) {
+  .soluciones,
+  .consultas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.solucion h4,
+.consulta h4,
+.solucion p,
+.consulta p {
+  line-height: 1.6;
+}
+.solucion,
+.consulta {
+  padding: 2.5rem;
+  border: 1px solid var(--gris);
+  border-radius: 0.5rem;
+  line-height: 1.5;
+}
+.solucion:hover,
+.consulta:hover {
+  background-color: #eaeaea;
+}
+
+.solucion__img,
+.consulta__img {
+  width: 8rem;
+  height: 8rem;
+}
+
+/* Consejos */
+.consejos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: gainsboro;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.consejos__titulo {
+  font-size: 2.2rem;
+  line-height: 1.6;
+  color: var(--azulOscuro);
+  font-weight: bold;
+}
+.consejos a {
+  margin: 0;
+}
+/* Para ti */
+.parati__portada {
+  display: block;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #eff5f5;
+  align-items: center;
+  padding: 0.8rem;
+}
+.parati__img {
+  border-radius: 0.5rem;
+}
+
+.parati__titulo {
+  display: block;
+  color: var(--azulOscuro);
+  font-weight: bold;
+  text-align: center;
+}
+.parati__texto p {
+  display: block;
+  font-size: 2.4rem;
+  line-height: 2;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .parati__portada {
+    display: flex;
+    height: 35rem;
+    padding: none;
+  }
+  .parati__img {
+    height: 30rem;
+    width: 56rem;
+  }
+}
+/* Footer */
+.footer {
+  background-color: var(--negro);
+  color: var(--blanco);
+  padding: 1.5rem;
+  text-align: center;
+}
+.footer li {
+  list-style: none;
+}
