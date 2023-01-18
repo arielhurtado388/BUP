@@ -37,9 +37,12 @@ input {
   padding: 0;
 }
 
-h1 {
-  font-size: 4.2rem;
+h1 a {
+  font-size: 3.8rem;
   color: var(--azulOscuro);
+}
+h1:hover {
+  cursor: pointer;
 }
 h2 {
   font-size: 3.4rem;
@@ -92,10 +95,13 @@ a {
   background-color: var(--blanco);
 }
 .header__titulo {
+  display: block;
   padding: 1.2rem;
   align-items: center;
   gap: 1rem;
+  text-align: center;
 }
+
 @media (min-width: 768px) {
   .header__titulo {
     display: flex;
@@ -110,7 +116,8 @@ a {
   align-items: center;
 }
 .entidades p {
-  color: var(--gris);
+  color: var(--negro);
+  border: 2px solid white;
 }
 .entidades p:hover {
   border-bottom: 1px solid #3a5ba0;
@@ -126,14 +133,23 @@ a {
 .buscador input {
   padding: 0.65rem;
   border-radius: 0.5rem;
-  border: 1px solid var(--gris);
+  border: 1px solid var(--negro);
 }
 
 .header__img,
 .consejos__img {
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 6rem;
+  height: 6rem;
   display: block;
+  text-align: center;
+  margin: 1.2rem auto;
+}
+@media (min-width: 768px) {
+  .header__img,
+  .consejos__img {
+    text-align: inherit;
+    margin: 0;
+  }
 }
 /* Navegacion */
 .nav {
