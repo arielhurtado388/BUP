@@ -60,6 +60,7 @@ a {
   text-decoration: none;
   color: var(--negro);
 }
+
 /* Utilidades */
 .centrar {
   text-align: center;
@@ -78,6 +79,9 @@ a {
   font-weight: bold;
   border: none;
   width: 95%;
+}
+.boton:hover {
+  background-color: #2b4865;
 }
 .centrado {
   display: flex;
@@ -124,6 +128,9 @@ a {
   color: #3a5ba0;
   cursor: pointer;
 }
+p.interes {
+  margin: 1.4rem 0;
+}
 @media (min-width: 768px) {
   .entidades {
     display: flex;
@@ -134,15 +141,16 @@ a {
   padding: 0.65rem;
   border-radius: 0.5rem;
   border: 1px solid var(--negro);
+  margin: 0.7rem 0;
 }
 
 .header__img,
 .consejos__img {
   width: 6rem;
   height: 6rem;
-  display: block;
   text-align: center;
   margin: 1.2rem auto;
+  display: block;
 }
 @media (min-width: 768px) {
   .header__img,
@@ -230,7 +238,7 @@ a {
 
 /* Consejos */
 .consejos {
-  display: flex;
+  display: block;
   justify-content: space-evenly;
   align-items: center;
   background-color: gainsboro;
@@ -238,11 +246,22 @@ a {
   border-radius: 0.5rem;
 }
 
+@media (min-width: 768px) {
+  .consejos {
+    display: flex;
+  }
+}
+
 .consejos__titulo {
   font-size: 2.2rem;
   line-height: 1.6;
   color: var(--azulOscuro);
   font-weight: bold;
+  margin: 2rem 0;
+}
+
+.consejos__titulo2 {
+  margin: 2rem 0;
 }
 .consejos a {
   margin: 0;
@@ -283,12 +302,16 @@ a {
     width: 56rem;
   }
 }
+p.expectativas {
+  font-size: 1.4rem;
+  margin: 1.4rem 0;
+}
 /* Footer */
 .footer {
   background-color: var(--negro);
   color: var(--blanco);
   padding: 1.5rem;
-  text-align: center;
+  /* text-align: center; */
 }
 .footer li {
   list-style: none;
