@@ -121,7 +121,6 @@ a {
 }
 .entidades p {
   color: var(--negro);
-  border: 2px solid white;
 }
 .entidades p:hover {
   border-bottom: 1px solid #3a5ba0;
@@ -169,6 +168,7 @@ p.interes {
   padding: 1rem;
   color: var(--blanco);
   text-align: center;
+  border-radius: 0.5rem;
 }
 .nav a:hover {
   color: var(--negro);
@@ -310,7 +310,8 @@ p.expectativas {
 .footer {
   background-color: var(--negro);
   color: var(--blanco);
-  padding: 1.5rem;
+  padding: 3rem 0rem;
+  font-weight: bold;
   /* text-align: center; */
 }
 .footer li {
